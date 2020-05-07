@@ -5,22 +5,21 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PersonCard
+      firstName="Jane"
+      lastName="Doe"
+      age={25}
+      hairColor="black"
+      />
+      <PersonCard
+      firstName="Nick"
+      lastName="Hujarski"
+      age={35}
+      hairColor="brown"
+      />
+      
     </div>
-  );
+  )
 }
 
 export default App;
